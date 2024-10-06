@@ -10,7 +10,15 @@
         }
     },
     "bin": "zed.exe",
-    "checkver": "github",
+    "shortcuts": [
+    [
+      "zed.exe",
+      "Zed"
+    ]
+  ],
+  "checkver": {
+    "github": "https://github.com/pirafrank/zed_unofficial_win_builds"
+  },
     "autoupdate": {
         "architecture": {
             "64bit": {
