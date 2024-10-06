@@ -3,7 +3,7 @@ Get-ChildItem -Recurse -Path .\bucket | ForEach-Object -Process {
     $content=Get-Content $_.FullName
     if ($content -match 'ghp.ci') {
         # 如果包含，则输出消息并跳出循环
-        Write-Output "文本中包含 'ghp.ci'，跳出循环。"
+        Write-Output "文本中包含 'ghp.ci'，进行下一个。"
         continue
     }
     # GitHub Releases
