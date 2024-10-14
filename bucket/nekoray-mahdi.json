@@ -13,8 +13,9 @@
   "bin": "nekoray.exe",
   "shortcuts": [
     [
-      "Nekoray2",
-      "nekoray.exe"
+      "nekoray.exe",
+      "Nekoray2"
+
     ]
   ],
   "persist": "config",
