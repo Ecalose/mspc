@@ -11,9 +11,7 @@
     },
     "extract_dir": "nekoray",
     "bin": [
-        "nekobox_core.exe",
         "nekoray.exe",
-        "nekoray_core.exe"
     ],
     "shortcuts": [
         [
