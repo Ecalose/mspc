@@ -29,7 +29,7 @@
         "architecture": {
             "64bit": {
                 "url": "https://github.com/Mahdi-zarei/nekoray/releases/download/$version/nekoray-$version-$matchExtra-windows64.zip",
-                "extract_dir": "nekoray-mahdi"
+                "extract_dir": "nekoray"
             }
         }
     }
