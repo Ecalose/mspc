@@ -10,9 +10,7 @@
         }
     },
     "extract_dir": "nekoray",
-    "bin": [
-        "nekoray.exe",
-    ],
+    "bin": "nekoray.exe",
     "shortcuts": [
         [
             "Nekoray2"
