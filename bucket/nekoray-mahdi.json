@@ -9,7 +9,7 @@
             "hash": "f32a6d4b3fce577b19c1198c415e5275a192b4c07fa265689b9c299173a03193"
         }
     },
-    "extract_dir": "nekoray-mahdi",
+    "extract_dir": "nekoray",
     "bin": [
         "nekobox_core.exe",
         "nekoray.exe",
