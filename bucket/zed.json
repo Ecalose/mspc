@@ -5,7 +5,7 @@
     "license": "AGPL-3.0, Apache-2.0, GPL-3.0",
     "architecture": {
         "64bit": {
-            "url": "https://ghp.ci/https://github.com/pirafrank/zed_unofficial_win_builds/releases/download/v0.166.1/zed.zip",
+            "url": "https://ghp.ci/https://ghgo.xyz/https://github.com/pirafrank/zed_unofficial_win_builds/releases/download/v0.166.1/zed.zip",
             "hash": "272c8f3c2ab2b04ca9159130f696c0657038f641a302ab6ab553638eb6b33fe0"
         }
     },
@@ -20,7 +20,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://ghp.ci/https://github.com/pirafrank/zed_unofficial_win_builds/releases/download/v$version/zed.zip"
+                "url": "https://ghp.ci/https://ghgo.xyz/https://github.com/pirafrank/zed_unofficial_win_builds/releases/download/v$version/zed.zip"
             }
         },
         "hash": {
