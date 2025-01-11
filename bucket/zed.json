@@ -16,7 +16,9 @@
             "Zed"
         ]
     ],
-    "checkver": "github",
+  "checkver": {
+    "github": "https://github.com/pirafrank/zed_unofficial_win_builds"
+   },
     "autoupdate": {
         "architecture": {
             "64bit": {
