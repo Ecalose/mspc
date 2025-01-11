@@ -25,7 +25,7 @@
     "persist": "config",
     "checkver": {
         "url": "https://api.github.com/repositories/754327435/releases/latest",
-        "regex": "nekoray-([\\d.]+)-([\\d-]+)-windows64"
+        "regex": "nekoray-([\\d.]+)-(?<extra>[\\d-]+)-windows64"
     },
     "autoupdate": {
         "architecture": {
