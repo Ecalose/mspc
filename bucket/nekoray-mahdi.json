@@ -5,7 +5,7 @@
     "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://ghgo.xyz/https://github.com/Mahdi-zarei/nekoray/releases/download/4.2.8/nekoray-4.2.8-2025-01-04-windows64.zip",
+            "url": "https://ghfast.top/https://github.com/Mahdi-zarei/nekoray/releases/download/4.2.8/nekoray-4.2.8-2025-01-04-windows64.zip",
             "hash": "76f264adcafd45cdfe1fc151fcce7c276de3959c1871936f353f86fb8c4d67e5"
         }
     },
@@ -30,7 +30,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://ghgo.xyz/https://github.com/Mahdi-zarei/nekoray/releases/download/$version/nekoray-$version-$matchExtra-windows64.zip",
+                "url": "https://ghfast.top/https://github.com/Mahdi-zarei/nekoray/releases/download/$version/nekoray-$version-$matchExtra-windows64.zip",
                 "extract_dir": "nekoray"
             }
         }
