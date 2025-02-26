@@ -1,12 +1,12 @@
 {
-    "version": "4.2.9",
+    "version": "4.2.10",
     "description": "Qt/C++ based cross-platform proxy configuration manager / v2ray sing-box GUI client",
     "homepage": "https://github.com/Mahdi-zarei/nekoray",
     "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://ghfast.top/https://github.com/Mahdi-zarei/nekoray/releases/download/4.2.9/nekoray-4.2.9-2025-01-20-windows64.zip",
-            "hash": "7b0bf1e8fc712f2834e22ad3c2d3eca668e2edb77adb614cc39d18f0ec82cfa7"
+            "url": "https://ghfast.top/https://github.com/Mahdi-zarei/nekoray/releases/download/4.2.10/nekoray-4.2.10-2025-02-25-windows64.zip",
+            "hash": "ff115b11c567dd18ef70b66a76f6b52903cb94a5b62a1a03dbe7fe2db5eb6b9a"
         }
     },
     "extract_dir": "nekoray",
