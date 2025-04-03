@@ -5,7 +5,7 @@
   "license": "MIT",
   "architecture": {
     "64bit": {
-      "url": "https://github.com/electerm/electerm/releases/download/v1.72.48/electerm-1.72.48-win-x64-portable.tar.gz",
+      "url": "https://ghfast.top/https://github.com/electerm/electerm/releases/download/v1.72.48/electerm-1.72.48-win-x64-portable.tar.gz",
       "hash": "cb5288913ede906570ca8691bdd4e66827b40aa59b673e94b3db5e75edbb6744",
       "extract_dir": "electerm-1.72.48-win-x64-portable"
     }
@@ -24,7 +24,7 @@
   "autoupdate": {
     "architecture": {
       "64bit": {
-        "url": "https://github.com/electerm/electerm/releases/download/v$version/electerm-$version-win-x64-portable.tar.gz",
+        "url": "https://ghfast.top/https://github.com/electerm/electerm/releases/download/v$version/electerm-$version-win-x64-portable.tar.gz",
         "extract_dir": "electerm-$version-win-x64-portable"
       }
     }
