@@ -1,0 +1,60 @@
+{
+    "version": "2.0.8",
+    "description": "使用 Flutter 开发的 BiliBili 第三方客户端 | A third-party BiliBili client developed using Flutter",
+    "homepage": "https://github.com/bggRGjQaUbCoE/PiliPlus",
+    "license": {
+        "identifier": "GPL-3.0-only"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/bggRGjQaUbCoE/PiliPlus/releases/download/2.0.8/PiliPlus_windows_2.0.8+5014_x64_portable.zip",
+            "hash": "1dcdd41dc5a4d8041bcf54fe66f79f5764076e84807cc7e20abd310e483dffa2"
+        }
+    },
+    "extract_dir": "PiliPlus-Win",
+    "extract_to": "app",
+    "shortcuts": [
+        [
+            "app\\piliplus.exe",
+            "PiliPlus"
+        ]
+    ],
+    "link": "$env:AppData\\com.example\\piliplus",
+    "cleanup": "$env:LocalAppData\\com.example\\piliplus",
+    "pre_install": [
+        "if (!$bucket) { $bucket = (scoop config).'abgox-abyss-bucket-name' }",
+        ". $bucketsdir\\$bucket\\util\\1.ps1",
+        "A-Start-Install"
+    ],
+    "post_install": [
+        "if (!$bucket) { $bucket = (scoop config).'abgox-abyss-bucket-name' }",
+        ". $bucketsdir\\$bucket\\util\\1.ps1",
+        "A-Complete-Install"
+    ],
+    "pre_uninstall": [
+        "if (!$bucket) { $bucket = (scoop config).'abgox-abyss-bucket-name' }",
+        ". $bucketsdir\\$bucket\\util\\1.ps1",
+        "A-Start-Uninstall",
+        "A-Stop-Process",
+        "A-Remove-Link"
+    ],
+    "post_uninstall": [
+        "if (!$bucket) { $bucket = (scoop config).'abgox-abyss-bucket-name' }",
+        ". $bucketsdir\\$bucket\\util\\1.ps1",
+        "A-Complete-Uninstall"
+    ],
+    "checkver": {
+        "url": "https://api.github.com/repos/bggRGjQaUbCoE/PiliPlus/releases/latest",
+        "regex": "/download/([^/]+)/PiliPlus_windows_(?<main>[\\d.]+)%2B(?<build>\\d+)_x64_portable.zip"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/bggRGjQaUbCoE/PiliPlus/releases/download/$version/PiliPlus_windows_$matchMain+$matchBuild_x64_portable.zip"
+            }
+        },
+        "hash": {
+            "mode": "github"
+        }
+    }
+}
