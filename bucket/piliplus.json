@@ -30,7 +30,8 @@
     "pre_uninstall": [
         "Get-Process piliplus -ErrorAction SilentlyContinue | Stop-Process -Force",
         "$link = \"$env:AppData\\com.example\\piliplus\"",
-        "if ((Get-Item $link -ErrorAction SilentlyContinue).LinkType -eq 'Junction') { Remove-Item $link -Force }"
+        "if ($purge -and (Get-Item $link -ErrorAction SilentlyContinue).LinkType -eq 'Junction') { Remove-Item $link -Force }",
+        "if ($purge) { Remove-Item \"$env:LocalAppData\\com.example\\piliplus\" -Recurse -Force -ErrorAction SilentlyContinue }"
     ],
     "checkver": {
         "url": "https://api.github.com/repos/bggRGjQaUbCoE/PiliPlus/releases/latest",
