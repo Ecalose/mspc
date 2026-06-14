@@ -1,18 +1,23 @@
 {  
-    "version": "1.1.5.4",  
-    "description": "A third-party BiliBili client developed using Flutter",  
+    "version": "2.0.9.2",  
+    "description": "使用 Flutter 开发的 BiliBili 第三方客户端 | A third-party BiliBili client developed using Flutter",  
     "homepage": "https://github.com/bggRGjQaUbCoE/PiliPlus",  
-    "license": "GPL-3.0-only",  
+    "license": {  
+        "identifier": "GPL-3.0-only"  
+    },  
     "architecture": {  
         "64bit": {  
-            "url": "https://github.com/bggRGjQaUbCoE/PiliPlus/releases/download/1.1.5.4/PiliPlus_windows_1.1.5+4543_x64.zip",  
-            "hash": "5dd5d7ba9d5fc752f37a6478b77e3ed55607e7da7c10acaacc504fa12fd418fa"  
+            "url": "https://github.com/bggRGjQaUbCoE/PiliPlus/releases/download/2.0.9.2/PiliPlus_windows_2.0.9+5051_x64_portable.zip",  
+            "hash": "4521782f7a7c4879a7420244f7965a470b96b8aca7628b9c1ff91059ddb26f59"  
         }  
     },  
     "extract_dir": "PiliPlus-Win",  
     "extract_to": "app",  
     "shortcuts": [  
-        ["app\\piliplus.exe", "PiliPlus"]  
+        [  
+            "app\\piliplus.exe",  
+            "PiliPlus"  
+        ]  
     ],  
     "pre_install": [  
         "$target = \"$persist_dir\\appdata\"",  
@@ -29,16 +34,13 @@
     ],  
     "checkver": {  
         "url": "https://api.github.com/repos/bggRGjQaUbCoE/PiliPlus/releases/latest",  
-        "regex": "/download/([^/]+)/PiliPlus_windows_(?<main>[\\d.]+)%2B(?<build>\\d+)_x64.zip"  
+        "regex": "/download/([^/]+)/PiliPlus_windows_(?<main>[\\d.]+)%2B(?<build>\\d+)_x64_portable.zip"  
     },  
     "autoupdate": {  
         "architecture": {  
             "64bit": {  
-                "url": "https://github.com/bggRGjQaUbCoE/PiliPlus/releases/download/$version/PiliPlus_windows_$matchMain+$matchBuild_x64.zip"  
+                "url": "https://github.com/bggRGjQaUbCoE/PiliPlus/releases/download/$version/PiliPlus_windows_$matchMain+$matchBuild_x64_portable.zip"  
             }  
-        },  
-        "hash": {  
-            "mode": "github"  
         }  
     }  
 }
