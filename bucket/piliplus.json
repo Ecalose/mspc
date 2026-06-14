@@ -1,0 +1,44 @@
+{  
+    "version": "1.1.5.4",  
+    "description": "A third-party BiliBili client developed using Flutter",  
+    "homepage": "https://github.com/bggRGjQaUbCoE/PiliPlus",  
+    "license": "GPL-3.0-only",  
+    "architecture": {  
+        "64bit": {  
+            "url": "https://github.com/bggRGjQaUbCoE/PiliPlus/releases/download/1.1.5.4/PiliPlus_windows_1.1.5+4543_x64.zip",  
+            "hash": "5dd5d7ba9d5fc752f37a6478b77e3ed55607e7da7c10acaacc504fa12fd418fa"  
+        }  
+    },  
+    "extract_dir": "PiliPlus-Win",  
+    "extract_to": "app",  
+    "shortcuts": [  
+        ["app\\piliplus.exe", "PiliPlus"]  
+    ],  
+    "pre_install": [  
+        "$target = \"$persist_dir\\appdata\"",  
+        "if (!(Test-Path $target)) { New-Item -ItemType Directory -Path $target -Force | Out-Null }",  
+        "$link = \"$env:AppData\\com.example\\piliplus\"",  
+        "if (Test-Path $link) { if ((Get-Item $link).LinkType -ne 'Junction') { Move-Item $link $target -Force } }",  
+        "else { New-Item -ItemType Directory -Path (Split-Path $link) -Force | Out-Null }",  
+        "if (!(Test-Path $link)) { cmd /c mklink /J \"$link\" \"$target\" | Out-Null }"  
+    ],  
+    "pre_uninstall": [  
+        "Get-Process piliplus -ErrorAction SilentlyContinue | Stop-Process -Force",  
+        "$link = \"$env:AppData\\com.example\\piliplus\"",  
+        "if ((Get-Item $link -ErrorAction SilentlyContinue).LinkType -eq 'Junction') { Remove-Item $link -Force }"  
+    ],  
+    "checkver": {  
+        "url": "https://api.github.com/repos/bggRGjQaUbCoE/PiliPlus/releases/latest",  
+        "regex": "/download/([^/]+)/PiliPlus_windows_(?<main>[\\d.]+)%2B(?<build>\\d+)_x64.zip"  
+    },  
+    "autoupdate": {  
+        "architecture": {  
+            "64bit": {  
+                "url": "https://github.com/bggRGjQaUbCoE/PiliPlus/releases/download/$version/PiliPlus_windows_$matchMain+$matchBuild_x64.zip"  
+            }  
+        },  
+        "hash": {  
+            "mode": "github"  
+        }  
+    }  
+}
